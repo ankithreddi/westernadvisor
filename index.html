@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Western Advisor - Your Trusted Partner for Study Abroad Planning</title>
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        .brand-blue { color: #1e3c96; }
+        .bg-brand-blue { background-color: #1e3c96; }
+        .brand-red { color: #e63946; }
+        .bg-brand-red { background-color: #e63946; }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-2">
+                <!-- Logo -->
+                <!-- Logo -->
+                <a href="#home">
+                    <img id="logo" alt="Western Advisor Logo" class="h-16">
+                </a>
+                <script>
+                    fetch('./logo.json')
+                        .then(response => response.json())
+                        .then(data => {
+                            // Use the Base64 string from the JSON file
+                            document.getElementById("logo").src = data.logo;
+                        })
+                        .catch(error => console.error("Error loading logo:", error));
+                </script>
+
+
+                </a>
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
+                    <a href="#destinations" class="text-gray-700 hover:text-blue-600">Destinations</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gray-50 py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold brand-blue mb-6">
+                    Your Trusted Partner for Systematic Study Abroad Planning
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    We map your aspirations to dream destinations, facilitating networks and connections for enhanced career opportunities.
+                </p>
+                <a href="#contact">
+                    <button class="bg-brand-red text-white px-8 py-3 rounded-lg hover:bg-red-700">
+                        Start Your Journey
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New promotional section-->
+    <div class="bg-white text-brand-blue p-12 rounded-2xl shadow-xl mb-10 text-center border-t-4 border-brand-red">
+        <h2 class="text-5xl font-extrabold mb-6 brand-blue">Take the First Step to <span class="text-brand-red">STUDY ABROAD</span></h2>
+        <ul class="space-y-4 text-xl">
+            <li class="flex items-center justify-center"><span class="text-green-500 text-4xl mr-4">📑</span> Courses starting from ₹7 Lakhs*</li>
+            <li class="flex items-center justify-center"><span class="text-green-500 text-4xl mr-4">🎓</span> Scholarship worth ₹10,00,000*</li>
+            <li class="flex items-center justify-center"><span class="text-green-500 text-4xl mr-4">📝</span> Offer letter in less than 48 hours*</li>
+        </ul>
+    </div>
+      
+  
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 brand-blue">Study Destinations</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-50 flex items-center justify-center text-4xl">
+                        🇺🇸
+                    </div>
+                    <h3 class="font-semibold">USA</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-50 flex items-center justify-center text-4xl">
+                        🇬🇧
+                    </div>
+                    <h3 class="font-semibold">UK</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-50 flex items-center justify-center text-4xl">
+                        🇫🇷
+                    </div>
+                    <h3 class="font-semibold">France</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-50 flex items-center justify-center text-4xl">
+                        🇩🇪
+                    </div>
+                    <h3 class="font-semibold">Germany</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-50 flex items-center justify-center text-4xl">
+                        🇨🇦
+                    </div>
+                    <h3 class="font-semibold">Canada</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-50 flex items-center justify-center text-4xl">
+                        🇦🇺
+                    </div>
+                    <h3 class="font-semibold">Australia</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Required Documents Section -->
+    <section id="required-documents" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 brand-blue">Required Documents</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-md">
+                    <div class="text-3xl">🌐</div>
+                    <p class="text-gray-700">Copy of a valid passport</p>
+                </div>
+                <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-md">
+                    <div class="text-3xl">📄</div>
+                    <p class="text-gray-700">TOEFL/IELTS/C1 Advanced scores</p>
+                </div>
+                <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-md">
+                    <div class="text-3xl">📊</div>
+                    <p class="text-gray-700">GMAT/GRE scores for PG programs</p>
+                </div>
+                <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-md">
+                    <div class="text-3xl">📑</div>
+                    <p class="text-gray-700">Academic Transcripts</p>
+                </div>
+                <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-md">
+                    <div class="text-3xl">🧾</div>
+                    <p class="text-gray-700">Letter of Recommendations (LORs)</p>
+                </div>
+                <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-md">
+                    <div class="text-3xl">🎨</div>
+                    <p class="text-gray-700">Portfolio (for specific courses)</p>
+                </div>
+                <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-md">
+                    <div class="text-3xl">📄</div>
+                    <p class="text-gray-700">A CV (if applicable)</p>
+                </div>
+                <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-md">
+                    <div class="text-3xl">🖊️</div>
+                    <p class="text-gray-700">Statement of Purpose (SOP)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-50 py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 brand-blue">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 brand-blue">University Selection</h3>
+                    <p class="text-gray-600">Strategic guidance in choosing universities aligned with your academic profile and career goals.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 brand-blue">Visa Assistance</h3>
+                    <p class="text-gray-600">Comprehensive support throughout the student visa application process with proven success rates.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 brand-blue">Application Support</h3>
+                    <p class="text-gray-600">End-to-end assistance with applications, documentation, and meeting crucial deadlines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-50 py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 brand-blue">Begin Your Journey</h2>
+            <div class="max-w-lg mx-auto">
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <input type="text" name="name" placeholder="Your Name" required 
+                               class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Email Address" required
+                               class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <select name="destination" required 
+                                class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">Preferred Destination</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                            <option value="france">France</option>
+                            <option value="germany">Germany</option>
+                            <option value="canada">Canada</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Your Message" rows="4" required
+                                  class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" 
+                            class="w-full bg-brand-red text-white px-6 py-3 rounded-lg hover:bg-red-700">
+                        Get Free Consultation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-blue text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Western Advisor</h3>
+                    <p class="text-gray-300">Your trusted partner for systematic study abroad planning.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p class="text-gray-300">Email: info@westernadvisor.in</p>
+                    <p class="text-gray-300">Phone: +91 8889998101</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/westernadvisor_?igsh=MWhwZHQza21sd2dmbg==" class="text-gray-300 hover:text-white">Instagram</a>
+                        <a href="#" class="text-gray-300 hover:text-white">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Submission -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            const name = event.target.name.value;
+            const email = event.target.email.value;
+            const destination = event.target.destination.value;
+            const message = event.target.message.value;
+
+            try {
+                const response = await fetch("https://776b-2409-40f0-11c1-a201-c96d-80a5-b115-6db0.ngrok-free.app/student-inquiries", {
+
+
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ name, email, destination, message }),
+                });
+
+                if (response.ok) {
+                    alert("Form submitted successfully!");
+                } else {
+                    alert("Failed to submit form. Please try again.");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("An error occurred. Please try again later.");
+            }
+        });
+    </script>
+</body>
+</html>
